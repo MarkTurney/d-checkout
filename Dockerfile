@@ -10,3 +10,4 @@ RUN echo "#!/bin/bash" > /entrypoint.sh \
     && echo "echo 'hello there'" >> /entrypoint.sh \
     && echo "ls -all /" >> /entrypoint.sh \
     && chmod +x /entrypoint.sh
+
