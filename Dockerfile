@@ -1,9 +1,10 @@
 FROM node:20
 
-#COPY action /action
+# COPY action /action
+COPY action /
 
 # RUN git clone https://code.forgejo.org/actions/checkout.git /action/
-RUN git clone https://code.forgejo.org/actions/checkout.git /
+# RUN git clone https://code.forgejo.org/actions/checkout.git /
 
 RUN ls -all /dist
 
