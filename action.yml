@@ -101,7 +101,7 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  entrypoint: entrypoint.sh
+  entrypoint: '/entrypoint.sh'
 ####
 
   # entrypoint: 'ls -all /'
