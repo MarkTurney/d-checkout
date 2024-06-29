@@ -105,7 +105,9 @@ runs:
   # entrypoint: 'ls -all /'
   #/action/dist/index.js
 
-  entrypoint: /entrypoint.sh
+  # entrypoint: /entrypoint.sh
+
+  entrypoint: '/usr/local/bin/node /action/dist/index.js'
 
   # entrypoint: 'node /action/dist/index.js'
   # post-entrypoint: 'node /action/dist/index.js'
