@@ -9,5 +9,6 @@ RUN ls -all /action/dist
 RUN echo "#!/bin/bash" > /entrypoint.sh \
     && echo "echo 'hello there'" >> /entrypoint.sh \
     && echo "ls -all /" >> /entrypoint.sh \
+    && echo "node /action/dist/index.js" >> /entrypoint.sh \
     && chmod +x /entrypoint.sh
 
