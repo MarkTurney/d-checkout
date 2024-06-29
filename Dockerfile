@@ -6,7 +6,7 @@ COPY action /action
 # RUN git clone https://code.forgejo.org/actions/checkout.git /action/
 # RUN git clone https://code.forgejo.org/actions/checkout.git /
 
-RUN ls -all /dist
+RUN ls -all /action/dist
 
 RUN echo "#!/bin/bash" > /entrypoint.sh \
     && echo "set -ex" >> /entrypoint.sh \
