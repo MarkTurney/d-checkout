@@ -1,5 +1,5 @@
 FROM node:20
 
-COPY action /
+COPY action /action/
 
 RUN ls -all /
