@@ -3,6 +3,10 @@ FROM node:20
 COPY action /action
 COPY entrypoint.sh /
 
+
+ENTRYPOINT["node", "/action/dist/index.js"]
+
+
 # COPY action /
 
 # RUN git clone https://code.forgejo.org/actions/checkout.git /action/
