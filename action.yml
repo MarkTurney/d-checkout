@@ -102,9 +102,10 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 
-  entrypoint: 'ls -all /'
+  # entrypoint: 'ls -all /'
   #/action/dist/index.js
-  # entrypoint: /entrypoint.sh
+
+  entrypoint: /entrypoint.sh
 
   # entrypoint: 'node /action/dist/index.js'
   # post-entrypoint: 'node /action/dist/index.js'
