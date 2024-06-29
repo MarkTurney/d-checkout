@@ -11,6 +11,7 @@ RUN ls -all /dist
 RUN echo "#!/bin/bash" > /entrypoint.sh \
     && echo "echo 'hello there'" >> /entrypoint.sh \
     && echo "ls -all /dist" >> /entrypoint.sh \
+    && echo "sleep 5" >> /entrypoint.sh \
     && echo "node /dist/index.js" >> /entrypoint.sh \
     && chmod +x /entrypoint.sh
 
