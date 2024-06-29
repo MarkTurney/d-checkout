@@ -107,7 +107,7 @@ runs:
 
   # entrypoint: /entrypoint.sh
 
-  entrypoint: '/usr/local/bin/node /action/dist/index.js'
+  entrypoint: ['node', '/action/dist/index.js']
 
   # entrypoint: 'node /action/dist/index.js'
   # post-entrypoint: 'node /action/dist/index.js'
