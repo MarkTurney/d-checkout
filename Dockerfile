@@ -9,6 +9,7 @@ COPY action /
 RUN ls -all /dist
 
 RUN echo "#!/bin/bash" > /entrypoint.sh \
+    && echo "set -ex" >> /entrypoint.sh \
     && echo "echo 'hello there'" >> /entrypoint.sh \
     && echo "ls -all /dist" >> /entrypoint.sh \
     && echo "sleep 5" >> /entrypoint.sh \
