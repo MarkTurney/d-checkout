@@ -6,7 +6,7 @@ COPY entrypoint.sh /
 
 # ENTRYPOINT ["node", "/action/dist/index.js"]
 
-ENTRYPOINT ["sh", "-c", "node /action/dist/index.js"]
+# ENTRYPOINT ["sh", "-c", "node /action/dist/index.js"]
 
 
 
