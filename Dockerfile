@@ -1,5 +1,5 @@
-FROM ubuntu-22.04
-# FROM ghcr.io/catthehacker/ubuntu:full-22.04
+FROM ghcr.io/catthehacker/ubuntu:full-22.04
+# FROM ubuntu-22.04
 # FROM node:20
 
 
