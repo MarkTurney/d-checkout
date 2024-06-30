@@ -99,9 +99,9 @@ inputs:
     description: The base URL for the GitHub instance that you are trying to clone from, will use environment defaults to fetch from the same instance that the workflow is running from unless specified. Example URLs are https://github.com or https://my-ghes-server.example.com
     required: false
 runs:
-  # using: 'docker'
-  # image: 'Dockerfile'
-  # entrypoint: /entrypoint.sh
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: /entrypoint.sh
 
   ####
 
@@ -116,7 +116,7 @@ runs:
   # entrypoint: 'node /action/dist/index.js'
   # post-entrypoint: 'node /action/dist/index.js'
 
-
-  using: node20
-  main: action/dist/index.js
-  post: action/dist/index.js
+  #
+  # using: node20
+  # main: action/dist/index.js
+  # post: action/dist/index.js
