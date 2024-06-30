@@ -4,9 +4,9 @@ COPY action /action
 COPY entrypoint.sh /
 
 
-ENTRYPOINT ["node", "/action/dist/index.js"]
+# ENTRYPOINT ["node", "/action/dist/index.js"]
 
-# ENTRYPOINT ["sh", "-c", "echo $GITHUB_SHA"]
+ENTRYPOINT ["sh", "-c", "node /action/dist/index.js"]
 
 
 
